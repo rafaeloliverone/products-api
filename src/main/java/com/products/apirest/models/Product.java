@@ -20,11 +20,11 @@ public class Product implements Serializable{
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	
-	private String nome;
+	private String name;
 	
-	private BigDecimal quantidade;
+	private BigDecimal quantity;
 	
-	private BigDecimal valor;
+	private BigDecimal value;
 
 	public long getId() {
 		return id;
@@ -34,29 +34,28 @@ public class Product implements Serializable{
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public BigDecimal getQuantidade() {
-		return quantidade;
+	public BigDecimal getQuantity() {
+		return quantity;
 	}
 
-	public void setQuantidade(BigDecimal quantidade) {
-		this.quantidade = quantidade;
+	public void setQuantity(BigDecimal quantity) {
+		this.quantity = quantity;
 	}
 
-	public BigDecimal getValor() {
-		return valor;
+	public BigDecimal getValue() {
+		return value;
 	}
 
-	public void setValor(BigDecimal valor) {
-		this.valor = valor;
+	public void setValue(BigDecimal value) {
+		this.value = value;
 	}
-	
-	
+		
 }
