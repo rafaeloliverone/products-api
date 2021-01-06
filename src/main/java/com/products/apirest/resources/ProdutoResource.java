@@ -37,4 +37,18 @@ public class ProdutoResource {
 		return productRepository.save(product);
 	}
 	
+	@DeleteMapping("/product/{id}")
+	public void deleteProduct(@PathVariable(value="id") long id) {
+		boolean product = productRepository.existsById(id);
+		
+		if (product) {
+			productRepository.deleteById(id);
+		}
+	}
+	
+	@PutMapping("/product")
+	public Product updateProduct(@RequestBody Product product) {
+		return productRepository.save(product);
+	}
+	
 }
